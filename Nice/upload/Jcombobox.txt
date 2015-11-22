@@ -1,0 +1,24 @@
+String[] str1 = null;
+		str1 = getList1();
+		jComboBox2 = new javax.swing.JComboBox(str1);
+		jComboBox2.setLocation(260, 315);
+		jComboBox2.setSize(100, 20);
+		jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				jComboBox2ActionPerformed(evt);
+			}
+
+			private void jComboBox2ActionPerformed(ActionEvent evt) {
+				// TODO Auto-generated method stub
+				JComboBox cb = (JComboBox) evt.getSource();
+				t2 = (String) cb.getSelectedItem();
+				System.out.println(t2);
+
+				select = false;
+			}
+		});
+
+		String[] str2 = null;
+		str2 = getList2();
+		jC
